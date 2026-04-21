@@ -1,104 +1,28 @@
-body {
-    font-family: Arial, Helvetica, sans-serif, sans-serif;
-    color: #333333;
-    margin: 0;
-    padding: 0;
+h1, h2 {
+    color: green;
   }
-   
-  #wrapper {
-    width: 80%;
-    margin: 0 auto;
+  
+  p {
+    color: gray;
   }
-   
-  #header {
-    background-color: #333333;
-    color: #ffffff;
-    padding: 10px;
-    overflow: hidden;
+  
+  ul {
+    border: 20px solid orange;
   }
-   
-  #header h1 {
-    float: left;
-    color: #ffffff;
-    margin: 0;
+  
+  ol {
+    border: 2px solid purple;
   }
-   
-  #nav {
-    float: right;
-    list-style: none;
-    margin: 15px 0 0 0;
-    padding: 0;
+  
+  ol, ul {
+    padding: 50px 20px;
+    border-radius: 100px;
   }
-   
-  #nav li {
-    display: inline;
-    margin-left: 10px;
+  
+  h1, strong {
+    color: purple;
   }
-   
-  #nav li a {
-    color: #ffffff;
-    text-decoration: none;
+  
+  em {
+    color: gray;
   }
-   
-  #nav li a:hover {
-    text-decoration: underline;
-  }
-   
-  #content {
-    overflow: hidden;
-    padding: 20px 0;
-  }
-   
-  #about {
-    float: left;
-    width: 60%;
-  }
-   
-  #cta {
-    background-color: #333333;
-    color: #ffffff;
-    padding: 10px;
-    margin-top: 10px;
-  }
-   
-  #just_10 {
-    color: #ffffff;
-  }
-   
-  #buy_now {
-    background-color: #ffffff;
-    color: #333333;
-    padding: 5px 10px;
-    text-decoration: none;
-  }
-   
-  #widget_pic {
-    float: right;
-    width: 30%;
-  }
-   
-  #widget_pic img {
-    width: 100%;
-  }
-   
-  #compare {
-    clear: both;
-  }
-   
-  #product_table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-   
-  #product_table th {
-    background-color: #333333;
-    color: #ffffff;
-    padding: 8px;
-    text-align: left;
-  }
-   
-  #product_table td {
-    padding: 8px;
-    border: 1px solid #cccccc;
-  }
-   
