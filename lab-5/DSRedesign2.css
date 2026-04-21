@@ -95,7 +95,7 @@ main {
 	
 main p {
 	width:95%;
-	float:left;
+	float: none;
     
 }
 
@@ -111,9 +111,9 @@ footer {
 	clear:both;
 	position:relative;
 	left: 0;
-	bottom: 3%;
+	margin: 0;
 	width: 100%;
-    padding: auto;
+    padding: 10px;
     
 	}
 /* end of css file */
