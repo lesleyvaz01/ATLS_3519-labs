@@ -1,3 +1,4 @@
+@charset "utf-8";
 #wrapper {
 	margin: 0 auto;
 	width: 96%;
@@ -88,12 +89,14 @@ main {
 	padding:4px;
 	margin:.5em 1em .5em 5em;
 	position:relative;
+   
 	} 
 
 	
 main p {
 	width:95%;
 	float:left;
+    
 }
 
 form#searchinput {
@@ -105,10 +108,12 @@ form#searchinput {
 	}  
 	
 footer {
-	clear:left;
+	clear:both;
 	position:relative;
-	left: 15%;
+	left: 0;
 	bottom: 3%;
-	width:90%;
+	width: 90%;
+    padding: auto;
+    
 	}
 /* end of css file */
