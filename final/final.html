@@ -11,82 +11,255 @@
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js></script>
 <![endif] -->
 
+<meta name="description" content="Blueprint Boulder is a CU student organization creating tech for social good since 2020. We partner with nonprofits to build software solutions." />
+<meta name="keywords" content="Blueprint Boulder, CU Boulder, tech for good, nonprofit, software, student organization, Colorado, Apps, Probono" />
+
 <link href="../final/final.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&display=swap" rel="stylesheet" />
 </head>
 
 
 <body>
 
-<header role="banner">  
+<header role="top-bar">  
 
-
-<img src="../final/images/blueprint-logo.png" alt="Blueprint logo" />
-<h1>We're Blueprint Boulder, and we've been creating tech for social good since 2020.</h1>
-<p>Hi There! </p> <!-- Should this be a header; you decide -->
-</header>
-
-
-
-<nav role="navigation">
+<nav role="navigation" id="navbar">
+    <div id="nav-wrapper">
 <ul> 
-<li>Home</li>
-<li>About</li>
-<li>Projects</li>
-<li>Our Team</li>
-<li>Contact</li>
+<li><a href="../final/final.html">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="#team-preview">Our Team</a></li>
+<li><a href="#contact" class="nav-cta">Contact</a></li>
 </ul>
-
+</div>
 </nav>
 
-<div role="search">
+<div id="wrapper">
+    <header role="banner" id="hero">
+        <div id="hero-text">
+ <h1>Blueprint Boulder</h1>
+<!-- <img src="../final/images/blueprint-logo.png" alt="Blueprint logo" /> -->
+<p>Hi There! We're a CU Boulder club and we've been creating tech for social good since 2020.</p> <!-- Should this be a header; you decide -->
+
+
+<!-- Taken from OG blueprint website -->
+<div id="hero-buttons">
+    <a href="#contact" class="btn-primary">Get in touch</a>
+    <a href="https://instagram.com/blueprintboulder" class="btn-secondary" target="_blank">Updates</a>
+    <a href="https://linktr.ee/blueprintboulder" class="btn-secondary" target="_blank">Links</a>
+  </div>
+  <p id="parent-org"><a href="https://calblueprint.org/" target="_blank">&#128279; Looking for our parent organization at Berkeley?</a></p>
+</div>
+<div id="hero-logo">
+  <img src="images/blueprint-logo.png" alt="Blueprint Boulder logo" />
+</div>
+
+</header>
+
+<!-- Dont think search is needed -->
+<!-- <div role="search">
 
 <form action="search.php" method="post" id="searchinput">
 <label for="search">Search:</label>
 <input id="search" type="text" name="searchfield" />
 <input type="submit" value="submit" />
 </form>
-</div> 
+</div>  -->
+
 
 
 <div role="main">
 
 <h1>Our Mission</h1>
 
-<p>Here at University Colorado Boulder we have Disability services to support students, faculty, and staff with accomodations and more! Disability Services is dedicated to providing students with disabilities an equal opportunity to participate in university programs, courses and activities through reasonable accommodations and services. Our office is here to support students, staff and faculty with accommodation requests, implementation, guidance and general information. </p>
+<p> Blueprint Boulder is here to support nonprofits of all different backgrounds. We're a student 
+    run club at the University of Boulder Colorado, with students majoring in a variety of different
+disciplines. We're using our technical skills to help local 501 (c) Nonprofits. </p>
 
+<!-- WHo are you ?? -->
 
-<h2>Projects</h2>
-    <p>Select your role to find the resources most relevant to you:</p>
-    <ul>
+<section id="about" role="main"> 
+    <div id="about-image">
+        <!-- TODO: fix image later -->
+    <!-- <img src="../final/images/blueprint-image.svg" alt="Photo of a computer screen with charts and data " /> -->
+</div>
+  
+
+<div id="about-cards">
+        <div class="about-card">
+
+    <h2>Are you a CU student?</h2>
+    <p>Blueprint Boulder is open to CU students of any skill level who are interested in design, development, or establishing relationships with our non-profit partners. Click below to sign up for our interest form, and we'll be in contact with you soon!</p>
+    <a href="https://forms.gle/GXb9tAXSi9QRgT6X6" class="btn-primary" target="_blank">Interest Form</a>
+</div>
+
+    <!-- <ul>
       <li>Student — New or Returning</li>
       <li>Graduate Student</li>
       <li>Faculty or Staff</li>
       <li>Family Member</li>
-    </ul>
+    </ul> -->
+    <div class="about-card">
+    <h2>Are you a Non-profit?</h2>
+<p>We accept meeting requests from nonprofits in January and February for projects during the following academic year. Our team will collaborate with you to plan your software project, and finalists will have their project built starting in the fall semester, with completion by the end of the spring semester</p>
+<a href="#contact" class="btn-outline">Work with us!</a>
+</div>
+</div>
+</section>
 
-    <h2>Deadlines</h2>
-<p>Check here for upcoming deadlines and DS news.</p>
+<!-- PRJECTS LANDING PAGE -->
+<section id="projects-preview">
+<h2>Projects</h2>
+<div class="card-grid">
+    <article class="project-card">
+        <img src="../final/images/backpacksociety.jpg" alt="Backpack Society logo" />
 
-<h2>Accommodations</h2>
-<p>DS provides academic, housing, parking, and other accommodations for eligible students.</p>
+        <h3>Backpack Society</h3>
+        <p class="tag">Application Development</p>
+        <p>Backpack Society provides food for kids facing food scarcity, working with 22 schools to provide non-perishable food.</p>
+      </article>
 
-<h2>Quick Links</h2>
-<ul>
-  <li>Register with Disability Services -- New Students</li>
-  <li>Returning Students</li>
-  <li>Resources for Faculty and Staff</li>
-</ul>
+      <article class="project-card">
+        <img src="../final/images/bcna.jpg" alt="BCNA logo" />
+        <h3>BCNA</h3>
+        <p class="tag">TBD</p>
+        <p>Boulder County Nature Association connects the community to local nature through education, conservation and guided outings.</p>
+      </article>
 
-</div> 
+      <article class="project-card">
+        <img src="../final/images/urbansymbiosis.jpg" alt="Urban Symbiosis logo" />
+        <h3>Urban Symbiosis</h3>
+        <p class="tag">Application Development</p>
+        <p>Urban Symbiosis builds long-standing symbiotic relationships between locally owned and community-driven businesses.</p>
+      </article>
 
-<footer>
-<h2>Get in touch with CU Disability Services</h2>
-<img src="images/footerimageTBA.png" alt="Footer image TBA" />
-<p>Address: 107 Center for Community, 1200 Larimer Street, Denver, CO 80204</p>
-<p>Phone: (303) 492-8671</p>
-<p>Email: dsinfo@colorado.edu</p>
-<p>Hours: Monday–Friday, 8am–5pm</p>
-</footer>
+      <article class="project-card">
+        <img src="../final/images/naturalHighs.jpg" alt="Natural Highs logo" />
+        <h3>Natural Highs</h3>
+        <p class="tag">Application Development</p>
+        <p>An interactive strengths-based prevention program co-created by teens to empower teens around healthy lifestyle choices.</p>
+      </article>
+
+    </div>
+    <div class="section-footer">
+      <a href="projects.html" class="btn-primary">View All Projects</a>
+    </div>
+  </section>
+
+
+
+
+<!-- PEOPLE LANDING PAGE -->
+<section id="team-preview">
+<h2>Our Team</h2>
+<div class="team-grid">
+
+    <article class="team-card">
+      <img src="https://blueprintboulder.org/profiles/arielan.jpg" alt="Arielan Palencia Li" />
+      <h3>Arielan Palencia Li</h3>
+      <p>President</p>
+    </article>
+
+    <article class="team-card">
+      <img src="https://blueprintboulder.org/profiles/jack.jpg" alt="Jack Rueschhoff" />
+      <h3>Jack Rueschhoff</h3>
+      <p>Co-VP Projects</p>
+    </article>
+
+    <article class="team-card">
+      <img src="https://blueprintboulder.org/profiles/yusuf.jpg" alt="Yusuf Morsy" />
+      <h3>Yusuf Morsy</h3>
+      <p>Co-VP Projects</p>
+    </article>
+
+    <article class="team-card">
+      <img src="https://blueprintboulder.org/profiles/donya.jpg" alt="Donya Raeouf" />
+      <h3>Donya Raeouf</h3>
+      <p>Nonprofit Relations</p>
+    </article>
+
+    <article class="team-card">
+      <img src="https://blueprintboulder.org/profiles/lesley.jpg" alt="Lesley Vazquez" />
+      <h3>Lesley Vazquez</h3>
+      <p>Nonprofit Coordinator</p>
+    </article>
+
+    <article class="team-card">
+      <img src="https://blueprintboulder.org/profiles/daniel.jpg" alt="Daniel Park" />
+      <h3>Daniel Park</h3>
+      <p>VP Outreach</p>
+    </article>
+
+    <article class="team-card">
+      <img src="https://blueprintboulder.org/profiles/annika.jpg" alt="Annika Ott" />
+      <h3>Annika Ott</h3>
+      <p>Outreach Coordinator</p>
+    </article>
+
+    <article class="team-card">
+      <img src="https://blueprintboulder.org/profiles/gabriel.jpg" alt="Gabriel Wardall" />
+      <h3>Gabriel Wardall</h3>
+      <p>Nonprofit Coordinator</p>
+    </article>
+
+</section>
+
+
+<!-- PREVIOUS MEMBERS -->
+ <!-- TESTIMONIAL -->
+ <section id="testimonial">
+    <blockquote>
+      <p>"The blueprint experience has been truly special. It's hard to find a better way to apply the skills you are learning in your classes to a real, impactful project and learn so many things..."</p>
+      <cite>— Jasey Chanders</cite>
+    </blockquote>
+  </section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <div id="contact-form-wrap">
+      <h2>Contact Us!</h2>
+      <form action="submit.php" method="post" role="form">
+        <fieldset>
+          <legend>Send us a message</legend>
+          <p> Fields marked with an <strong>*asterik</strong> are required to be completed</p>
+          <br>
+          <ul>
+            <li>
+              <label for="fullname">Full Name <span class="required">*</span></label>
+              <input id="fullname" name="fullname" type="text" class="reqfield" title="Required field" />
+            </li>
+            <li>
+              <label for="email">Email <span class="required">*</span></label>
+              <input id="email" name="email" type="email" class="reqfield" title="Required field" />
+            </li>
+            <li>
+              <label for="message">Message <span class="required">*</span></label>
+              <textarea id="message" name="message" rows="5" class="reqfield" title="Required field"></textarea>
+            </li>
+          </ul>
+        </fieldset>
+        <input type="submit" value="Submit" id="submit-btn" />
+      </form>
+    </div>
+    <div id="contact-image">
+      <img src="../final/images/blueprint-footer.svg" alt="Blueprint Boulder contact illustration" />
+    </div>
+  </section>
+
+</div>
+
+
+  <!-- FOOTER -->
+  <footer role="contentinfo">
+    <div id="footer-inner">
+      <p>&#169; All rights reserved | 2026 | Blueprint Boulder</p>
+      <p>Made with &#10084; by the Blueprint Team</p>
+      <a href="http://github.com/blueprintboulder/" target="_blank">
+        <img src="https://blueprintboulder.org/icons/github.svg" alt="GitHub" id="github-icon" />
+      </a>
+    </div>
+  </footer>
 
 </body>
 </html>
